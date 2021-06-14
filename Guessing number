@@ -1,0 +1,27 @@
+
+attempts = 1
+print("Number of guesses is limited it only 9 times")
+actual_number = int(input("\nEnter a guess number : "))
+
+while (attempts<=9):
+    guess = int(input("Enter a number : "))
+    if(guess<actual_number):
+        print("You guess is to low, Please enter high number")
+        
+    elif (guess>actual_number):
+        print("\nYou guess is too high,please enter high number")
+        
+    else:
+        print(f"\nYou guess the number {attempts} attempts")
+        print("\nThanks for playing")
+        print("\nGame is over")
+        break
+    
+    
+    print(9-attempts,"no of guess left")
+    attempts = attempts + 1
+    
+if(attempts>9):
+    print("\nGame is over")
+    print("\nThanks for playing")
+    
